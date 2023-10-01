@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Write Broad 3</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header">
+        <h2>Company Employees</h2>
+    </div>
+    <div id="input">
+        <button id="getEmployees" onclick="getEmployees()">Get Employees</button>
+    </div>
+    <div id="result">
+        <div id="searchDiv">
+            <input type="text" id="search" onkeyup="searchTable()" placeholder="Search for names..">
+        </div>
+        <div id="functionButton">
+            <button id="sort" onclick="sortTable()">Sort</button>
+            <button id="clear" onclick="clearTable()">Clear</button>
+        </div>
+        <table id="employeeList">
+            <tr>
+                <th>User ID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Address</th>
+                <th>Phone</th>
+                <th>Website</th>
+                <th>Company</th>
+            </tr>
+            <tr>
+                <td colspan='8' id="noData">
+                    No employees found
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>
